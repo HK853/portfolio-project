@@ -235,7 +235,7 @@
 
           opacity: 0;
           visibility: hidden;
-          /* display: none; */
+          display: none;
           pointer-events: none;
       }
 
@@ -248,7 +248,8 @@
           opacity: 1;
           visibility: visible;
           z-index: 1;
-          pointer-events: auto;
+          display: flex;
+          /* pointer-events: auto; */
       }
 
       .active .navbtn .nav-icon[name="close-outline"] {
