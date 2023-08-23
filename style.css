@@ -1,0 +1,384 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  * {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+      background: linear-gradient(270deg, white, rgb(245, 245, 245), white);
+      overflow-x: hidden;
+      width: 100%;
+      height: 100vh;
+  }
+
+  html {
+      overflow-x: hidden;
+  }
+
+  .hero-headder {
+      width: 100%;
+      height: 100%;
+      min-height: 26vh;
+  }
+
+  .wrapper {
+      width: 1280px;
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  header {
+      padding: 40px 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+
+  .logo {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .logo .text {
+      display: flex;
+      font-size: 32px;
+      font-weight: 500;
+  }
+
+  .nav-links li {
+      list-style-type: none;
+  }
+
+  .nav-links li {
+      display: inline-block;
+  }
+
+  .nav-links li a {
+      margin-right: 5em;
+      color: indianred;
+  }
+
+  .nav-links li a:hover {
+      color: indianred;
+      transition: 0.2s;
+      font-weight: 600;
+      text-shadow: 0 0 2px indianred;
+  }
+
+  .theme i {
+      font-size: 20px;
+      margin-left: 8px;
+      cursor: pointer;
+      position: absolute;
+      right: 6rem;
+      top: 3.8rem;
+      transform: translate(-50%, -50%);
+  }
+
+  .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 4rem;
+  }
+
+  .container .pic {
+      width: 310px;
+      height: 310px;
+      border: 8px solid indianred;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 px crimson;
+  }
+
+  .container .pic img {
+      height: 100%;
+      width: 100%;
+      transition: .5s;
+  }
+
+  .pic img:hover {
+      transform: scale(2.0);
+  }
+
+  .intro {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .intro h4 {
+      font-size: 24px;
+  }
+
+  .intro h1 {
+      font-size: 3rem;
+  }
+
+  .intro p {
+      font-size: large;
+  }
+
+  .icon {
+      margin: 45px 0;
+  }
+
+  .icon .btn {
+      padding: 10px 20px;
+      margin: 5px 0;
+      color: indianred;
+      border-radius: 30px;
+      border: 2px solid indianred;
+  }
+
+  .icon .btn:hover {
+      background-color: indianred;
+      color: white;
+      box-shadow: 0 0 10px indianred;
+  }
+
+  .intro .social {
+      display: inline-block;
+  }
+
+  .intro .social a i {
+      color: indianred;
+      font-size: 1.5em;
+      padding: 10px 10px;
+      border: 1px solid indianred;
+      border-radius: 50%;
+      margin-right: 8px;
+  }
+
+  .intro .social a i:hover {
+      background-color: indianred;
+      color: white;
+      box-shadow: 0 0 10px indianred;
+  }
+
+  .nav-icon {
+      color: indianred;
+      width: 2.4rem;
+      height: 2.4rem;
+      color: black;
+  }
+
+  .nav-icon[name="close-outline"] {
+      color: indianred;
+      display: none;
+  }
+
+  .navbtn {
+      cursor: pointer;
+      display: none;
+      background: transparent;
+  }
+
+
+  /* responsiveness code */
+  
+  @media (max-width:1350px) {
+         .theme i{
+              position: absolute;
+              right: 5%;
+         }
+  }
+
+  @media (max-width:980px) {
+      body {
+          width: 100%;
+      }
+
+      .theme i {
+          display: block;
+          position: absolute;
+          right: 15%;
+      }
+
+      .nav-icon {
+          color: indianred;
+      }
+
+      .navbtn {
+          display: block;
+          z-index: 999;
+          color: black;
+      }
+
+      .nav-links {
+          width: 50%;
+          height: 50vh;
+          background: linear-gradient(45deg, white,rgb(244, 186, 186), white);
+          border: 1px solid indianred;
+          border-top: 0px;
+          border-bottom-left-radius: 1em;
+          box-shadow: 0 0 8px crimson;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          transform: translateX(100%);
+          transition: all 0.5s ease linear;
+
+          opacity: 0;
+          visibility: hidden;
+          display: none;
+          pointer-events: none;
+      }
+
+      .nav-links li {
+          padding: 15px 0px;
+      }
+
+      .active .nav-links {
+          transform: translateX(0);
+          opacity: 1;
+          visibility: visible;
+          z-index: 1;
+          pointer-events: auto;
+      }
+
+      .active .navbtn .nav-icon[name="close-outline"] {
+          display: block;
+      }
+
+      .active .navbtn .nav-icon[name="menu-outline"] {
+          display: none;
+      }
+  }
+
+  @media (max-width:670px) {
+
+      .container {
+          flex-direction: column;
+          padding-top: 2em;
+      }
+
+      .nav-icon {
+          color: indianred;
+      }
+
+      .container .intro h4 {
+          padding-top: 1em;
+          font-size: 18px;
+      }
+
+      .container .intro h1 {
+          font-size: 40px;
+      }
+
+      .container .intro p {
+          font-size: 15px;
+          height: 10px;
+      }
+
+      .icon {
+          width: 80%;
+          font-size: 15px;
+      }
+
+      .social a {
+          font-size: 13px;
+      }
+
+      .theme i{
+        position: absolute;
+        top: 6%;
+      }
+  }
+
+  @media (max-width:560px) {
+
+      .header {
+          padding: 2px 1rem;
+      }
+
+      header .logo .text p {
+          padding-top: 2em;
+          font-size: 20px;
+      }
+
+      .nav-icon {
+          color: indianred;
+      }
+
+      .navbtn .nav-icon {
+          position: absolute;
+          right: 13px;
+      }
+
+      #toggleDark {
+          padding-bottom: 4px;
+      }
+  }
+
+  @media (max-width:300px) {
+
+
+      header .logo .text p {
+          display: none;
+      }
+
+      .container .intro h4 {
+          padding-top: 1em;
+          font-size: 15px;
+      }
+
+      .container .pic {
+          width: 180px;
+          height: 180px;
+      }
+
+      .container .intro h1 {
+          font-size: 25px;
+      }
+
+      .container .intro p {
+          font-size: 12px;
+          height: 10px;
+      }
+
+      .icon {
+          width: 80%;
+          font-size: 10px;
+      }
+
+      .social a {
+          font-size: 10px;
+      }
+
+      .navbtn .nav-icon {
+          position: absolute;
+          top: 20px;
+          right: 5px;
+      }
+
+      .nav-icon {
+          color: indianred;
+      }
+
+      .nav-links li {
+          font-size: 15px;
+          font-weight: 500;
+          margin-left: 75px;
+      }
+
+      .theme i {
+          position: absolute;
+          top: 40px;
+          left: 5rem;
+      }
+  }
