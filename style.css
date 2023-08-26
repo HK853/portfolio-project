@@ -23,7 +23,7 @@
   .hero-headder {
       width: 100%;
       height: 100%;
-      min-height: 26vh;
+      min-height: 24vh;
   }
 
   .wrapper {
@@ -63,14 +63,14 @@
 
   .nav-links li a {
       margin-right: 5em;
-      color: indianred;
+      color: rgb(39, 147, 255);
   }
 
   .nav-links li a:hover {
-      color: indianred;
+      color: rgb(39, 147, 255);
       transition: 0.2s;
       font-weight: 600;
-      text-shadow: 0 0 2px indianred;
+      text-shadow: 0 0 2px rgb(39, 147, 255);
   }
 
   .theme i {
@@ -87,26 +87,22 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding-top: 4rem;
+      height: 35em;
+      padding-top: 65px;
+      padding-bottom: 60px;
   }
 
   .container .pic {
-      width: 310px;
-      height: 310px;
-      border: 8px solid indianred;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 0 0 px crimson;
   }
 
   .container .pic img {
       height: 100%;
       width: 100%;
       transition: .5s;
-  }
-
-  .pic img:hover {
-      transform: scale(2.0);
   }
 
   .intro {
@@ -134,15 +130,15 @@
   .icon .btn {
       padding: 10px 20px;
       margin: 5px 0;
-      color: indianred;
+      color: rgb(39, 147, 255);;
       border-radius: 30px;
-      border: 2px solid indianred;
+      border: 2px solid rgb(39, 147, 255);
   }
 
   .icon .btn:hover {
-      background-color: indianred;
+      background-color: rgb(39, 147, 255);
       color: white;
-      box-shadow: 0 0 10px indianred;
+      box-shadow: 0 0 10px rgb(39, 147, 255);
   }
 
   .intro .social {
@@ -150,29 +146,29 @@
   }
 
   .intro .social a i {
-      color: indianred;
+      color: rgb(39, 147, 255);;
       font-size: 1.5em;
       padding: 10px 10px;
-      border: 1px solid indianred;
+      border: 1px solid rgb(39, 147, 255);
       border-radius: 50%;
       margin-right: 8px;
   }
 
   .intro .social a i:hover {
-      background-color: indianred;
+      background-color: rgb(39, 147, 255);
       color: white;
-      box-shadow: 0 0 10px indianred;
+      box-shadow: 0 0 10px rgb(39, 147, 255);
   }
 
   .nav-icon {
-      color: indianred;
+      color: rgb(39, 147, 255);
       width: 2.4rem;
       height: 2.4rem;
       color: black;
   }
 
   .nav-icon[name="close-outline"] {
-      color: indianred;
+      color: rgb(39, 147, 255);
       display: none;
   }
 
@@ -180,6 +176,49 @@
       cursor: pointer;
       display: none;
       background: transparent;
+  }
+
+  /*  about  */
+
+
+  .aboutme{
+       width: 1280px;
+       max-width: 95%;
+       margin: 0 auto;
+       padding: 6.5em 20px 0 20px;
+  }
+
+  .myself{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .mypic{
+    width: 310px;
+    height: 310px;
+    border: 5px solid rgb(39, 147, 255);
+    border-radius: 1.8em;
+    overflow: hidden;
+  }
+   
+  .mypic img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+
+  .mypic img:hover {
+    transform: scale(2.0);
+}
+
+  .mydata{
+    width: 35em;
+  }
+
+  .mydata p{
+    font-size: 21px;
   }
 
 
@@ -190,6 +229,10 @@
               position: absolute;
               right: 5%;
          }
+
+         .mydata p{
+            padding-left: 20px;
+          }
   }
 
   @media (max-width:980px) {
@@ -204,7 +247,7 @@
       }
 
       .nav-icon {
-          color: indianred;
+          color: rgb(39, 147, 255);
       }
 
       .navbtn {
@@ -216,11 +259,11 @@
       .nav-links {
           width: 50%;
           height: 50vh;
-          background: linear-gradient(45deg, white,rgb(244, 186, 186), white);
-          border: 1px solid indianred;
+          background: linear-gradient(45deg, white,rgb(156, 240, 255), white);
+          border: 1px solid rgb(39, 147, 255);
           border-top: 0px;
           border-bottom-left-radius: 1em;
-          box-shadow: 0 0 8px crimson;
+          box-shadow: 0 0 8px rgb(39, 147, 255);
           position: absolute;
           top: 0;
           right: 0;
@@ -258,6 +301,13 @@
       .active .navbtn .nav-icon[name="menu-outline"] {
           display: none;
       }
+
+      .mydata p{
+        padding-top: 50px;
+        font-size: 19px;
+        padding-left: 20px;
+      }
+
   }
 
   @media (max-width:670px) {
@@ -268,7 +318,12 @@
       }
 
       .nav-icon {
-          color: indianred;
+          color: rgb(39, 147, 255);
+      }
+
+      .container .pic{
+        height: 310px;
+        width: 270px;
       }
 
       .container .intro h4 {
@@ -298,6 +353,15 @@
         position: absolute;
         top: 7.5%;
       }
+      
+      .mydata{
+        width: 25em;
+      }
+
+      .mydata p{
+        padding-top: 45px;
+        font-size: 17px;
+      }
   }
 
   @media (max-width:560px) {
@@ -312,7 +376,7 @@
       }
 
       .nav-icon {
-          color: indianred;
+          color: rgb(39, 147, 255);
       }
 
       .navbtn .nav-icon {
@@ -323,6 +387,7 @@
       #toggleDark {
           padding-bottom: 4px;
       }
+
   }
 
   @media (max-width:300px) {
@@ -367,7 +432,7 @@
       }
 
       .nav-icon {
-          color: indianred;
+          color: rgb(39, 147, 255);
       }
 
       .nav-links li {
@@ -381,4 +446,15 @@
           top: 40px;
           left: 5rem;
       }
+    
+      .mypic {
+        width: 180px;
+        height: 180px;
+    }
+
+    .mydata p{
+        padding-top: 30px;
+        font-size: 16px;
+    }
+
   }
