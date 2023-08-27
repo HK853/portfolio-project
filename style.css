@@ -205,7 +205,7 @@
        width: 1280px;
        max-width: 95%;
        margin: 0 auto;
-       padding: 6.5em 20px 0 20px;
+       padding: 6.5em 20px 160px 20px;
   }
 
   .myself{
@@ -240,6 +240,9 @@
   .mydata p{
     font-size: 21px;
   }
+
+  
+  /*  skills  */
 
 
   /* responsiveness code */
@@ -330,7 +333,9 @@
 
       .aboutme{
         padding-top: 60px;
+        padding-bottom: 100px;
       }
+      
 
   }
 
@@ -391,6 +396,10 @@
       .aboutsec h2{
         font-size: 30px;
       }
+
+      .aboutme{
+        padding-bottom: 50px;
+      }
   }
 
   @media (max-width:560px) {
@@ -441,7 +450,7 @@
       }
 
       .aboutme{
-        padding-top: 40px;
+        padding-top: 50px;
       }
 
       .container .intro h1 {

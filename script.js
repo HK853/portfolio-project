@@ -45,3 +45,9 @@ const sr = ScrollReveal({
 sr.reveal('.intro', {delay:'50',origin:'bottom'});
 sr.reveal('.pic', {delay:'50', origin:'left'});
 
+sr.reveal('.mypic',{delay:'50',orgin:'top'});
+sr.reveal('.mydata',{delay:'50', origin:'right'});
+
+
+// on click 
+
