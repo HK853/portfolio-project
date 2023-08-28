@@ -7,6 +7,7 @@
       text-decoration: none;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+      transition: 0.5s;
   }
 
   body {
@@ -70,7 +71,11 @@
       color: rgb(39, 147, 255);
       transition: 0.2s;
       font-weight: 600;
-      text-shadow: 0 0 2px rgb(39, 147, 255);
+      text-shadow: 0 0 10px rgb(39, 147, 255),
+                   0 0 10px rgb(39, 147, 255),
+                   0 0 40px rgb(39, 147, 255),
+                   0 0 80px rgb(39, 147, 255),
+                   0 0 100px rgb(39, 147, 255);
   }
 
   .theme i {
@@ -188,6 +193,7 @@
   }
 
   .aboutsec h2{
+    color: rgb(85, 170, 255);
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
@@ -195,7 +201,6 @@
   }
 
   .aboutsec h2:hover{
-    color: rgb(85, 170, 255);
       transition: 0.2s;
       font-weight: 600;
       text-shadow: 0 1cqh 12px rgb(39, 147, 255);
