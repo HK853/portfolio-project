@@ -279,40 +279,134 @@
   .bar span {
       height: 10px;
       position: absolute;
-      background-color: aqua;
+      background: linear-gradient(45deg, rgb(39, 147, 255)0%, rgb(16, 237, 222)100%);
       border-radius: 25px;
   }
 
   .html {
       width: 32.2%;
+      animation: html ease-in .9s;
   }
 
   .css {
       width: 36.8%;
+      animation: css ease-in .9s;
   }
 
   .git {
       width: 40%;
+      animation: git ease-in .9s;
   }
 
   .js {
       width: 9.2%;
+      animation: js ease-in .9s;
   }
 
   .c {
       width: 39.1%;
+      animation: c ease-in .9s;
   }
 
   .cpp {
       width: 27.6%;
+      animation: cpp ease-in .9s;
   }
 
   .java {
       width: 34.5%;
+      animation: java ease-in .9s;
   }
 
   .dsa {
       width: 32.2%;
+      animation: dsa ease-in .9s;
+  }
+
+  @keyframes html {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 32.2%;
+      }
+  }
+
+  @keyframes dsa {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 32.2%;
+      }
+  }
+
+
+  @keyframes css {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 36.8%;
+      }
+  }
+
+
+  @keyframes git {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 40%;
+      }
+  }
+
+
+  @keyframes c {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 39.1%;
+      }
+  }
+
+
+  @keyframes cpp {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 27.7%;
+      }
+  }
+
+
+  @keyframes java {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 34.5%;
+      }
+  }
+
+
+  @keyframes js {
+      0% {
+          width: 0%;
+      }
+
+      100% {
+          width: 9.2%;
+      }
   }
 
   /* responsiveness code */
@@ -470,6 +564,42 @@
       .aboutme {
           padding-bottom: 50px;
       }
+
+      .skills {
+         display: block;  
+      }
+
+      .html {
+        width: 58%;
+    }
+  
+    .css {
+        width: 67%;
+    }
+  
+    .git {
+        width: 75%;
+    }
+  
+    .js {
+        width: 15%;
+    }
+  
+    .c {
+        width: 71.5%;
+    }
+  
+    .cpp {
+        width: 49%;
+    }
+  
+    .java {
+        width: 62.5%;
+    }
+  
+    .dsa {
+        width: 58%;
+    }
   }
 
   @media (max-width:560px) {
