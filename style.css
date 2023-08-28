@@ -569,6 +569,10 @@
          display: block;  
       }
 
+      .skill-bar{
+        padding-bottom: 15px;
+      } 
+      
       .html {
         width: 58%;
     }
