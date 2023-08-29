@@ -3,13 +3,13 @@
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
 
-toggle.addEventListener('click', function(){
+toggle.addEventListener('click', function () {
     this.classList.toggle('bi-moon');
-    if(this.classList.toggle('bi-brightness-high-fill')){
+    if (this.classList.toggle('bi-brightness-high-fill')) {
         body.style.background = 'white';
         body.style.color = 'black';
         body.style.transition = '2s';
-    }else{
+    } else {
         body.style.background = 'black';
         body.style.color = 'white';
         body.style.transition = '2s';
@@ -18,36 +18,38 @@ toggle.addEventListener('click', function(){
 
 // nav menu code
 
-const btn=document.querySelector(".navbtn")
+const btn = document.querySelector(".navbtn")
 const navheader = document.querySelector(".header")
 const p = document.querySelector(".nav-links")
 
-const togglenavbar = () =>{
- 
-(navheader.classList.toggle("active"));
+const togglenavbar = () => {
 
-//     p.style.display="none";
-//    }else{
-//     p.style.display="block";
-//    }
+    (navheader.classList.toggle("active"));
+
+    //     p.style.display="none";
+    //    }else{
+    //     p.style.display="block";
+    //    }
 };
-btn.addEventListener('click' ,() => togglenavbar());
+btn.addEventListener('click', () => togglenavbar());
 
 // animation
 
 const sr = ScrollReveal({
-  distance: '100px',
-  duration: 5000,
-  delay: 200,
-  reset: true
+    distance: '100px',
+    duration: 5000,
+    delay: 200,
+    reset: true
 });
 
-sr.reveal('.intro', {delay:'50',origin:'bottom'});
-sr.reveal('.pic', {delay:'50', origin:'left'});
+sr.reveal('.intro', { delay: '50', origin: 'bottom' });
+sr.reveal('.pic', { delay: '50', origin: 'left' });
 
-sr.reveal('.mypic',{delay:'50',orgin:'top'});
-sr.reveal('.mydata',{delay:'50', origin:'right'});
+sr.reveal('.mypic', { delay: '50', orgin: 'top' });
+sr.reveal('.mydata', { delay: '50', origin: 'right' });
 
 
-// on click 
+// sticky nav bar
+
+
 

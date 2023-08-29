@@ -259,6 +259,7 @@
       padding-top: 60px;
       padding-left: 40px;
       padding-right: 40px;
+      padding-bottom: 100px;
   }
 
   .skills .skill-bar .info {
@@ -407,6 +408,71 @@
           width: 9.2%;
       }
   }
+
+/* footer */
+
+.footer{
+    padding: 40px 40px;
+    background: linear-gradient(45deg, rgb(39, 147, 255)0%, rgb(16, 237, 222)100%);
+    margin-top: 50px;
+}
+
+.footer .f{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;   
+}
+
+.footer .f a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .f a:hover{
+    background-color: white;
+    color:rgb(39, 147, 255);
+    box-shadow: 0 0 8px white;
+}
+
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.list{
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    color: white;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .cw{
+    color: white    ;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+}
 
   /* responsiveness code */
 
