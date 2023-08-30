@@ -498,6 +498,7 @@
     .wrapper{
         margin-left: 0;
         margin-right: 0;
+        height: 4.5em;
     }
 }
 
@@ -509,6 +510,10 @@
 
       .mydata p {
           padding-left: 20px;
+      }
+
+      .wrapper{
+        height: 4.5em;
       }
   }
 
@@ -578,6 +583,9 @@
           display: none;
       }
 
+      .wrapper{
+        height: 4.5em;
+      }
       .mydata p {
           padding-top: 50px;
           font-size: 19px;
@@ -593,6 +601,10 @@
   }
 
   @media (max-width:670px) {
+
+    .wrapper{
+        height: 75px;
+    }
 
       .container {
           flex-direction: column;
@@ -633,8 +645,7 @@
       }
 
       .theme i {
-          position: absolute;
-          top:6%;
+         display: none;
       }
 
       .mydata {
