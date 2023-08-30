@@ -285,42 +285,42 @@
 
   .html {
       width: 32.2%;
-      animation: html ease-in .9s;
+      animation: html ease-in 3s;
   }
 
   .css {
       width: 36.8%;
-      animation: css ease-in .9s;
+      animation: css ease-in 3s;
   }
 
   .git {
       width: 40%;
-      animation: git ease-in .9s;
+      animation: git ease-in 3s;
   }
 
   .js {
       width: 9.2%;
-      animation: js ease-in .9s;
+      animation: js ease-in 3s;
   }
 
   .c {
       width: 39.1%;
-      animation: c ease-in .9s;
+      animation: c ease-in 3s;
   }
 
   .cpp {
       width: 27.6%;
-      animation: cpp ease-in .9s;
+      animation: cpp ease-in 3s;
   }
 
   .java {
       width: 34.5%;
-      animation: java ease-in .9s;
+      animation: java ease-in 3s;
   }
 
   .dsa {
       width: 32.2%;
-      animation: dsa ease-in .9s;
+      animation: dsa ease-in 3s;
   }
 
   @keyframes html {
