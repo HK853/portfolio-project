@@ -52,4 +52,13 @@ sr.reveal('.mydata', { delay: '50', origin: 'right' });
 // sticky nav bar
 
 
+window.onscroll = function(){
+    var topbar = document.querySelector("#h");
+    var sticky = topbar.offsetTop;
 
+     if(window.pageYOffset >= sticky){
+        topbar.classList.add("sticky");
+     }else{
+        topbar.classList.remove("sticky");
+     }
+}

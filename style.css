@@ -7,7 +7,7 @@
       text-decoration: none;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      transition: 0.5s;
+      transition: 0s;
   }
 
   body {
@@ -29,13 +29,23 @@
 
   .wrapper {
       width: 1280px;
-      max-width: 95%;
-      margin: 0 auto;
+      max-width: 100%;
+      height: 8%;
+      margin-left:0px;
+      margin-right: 0px;
       padding: 0 20px;
+      background: linear-gradient(45deg, rgb(39, 147, 255)0%, rgb(16, 237, 222)100%);
   }
 
+  .sticky{
+    position:fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
   header {
-      padding: 40px 0 30px;
+      padding: 20px 0 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -84,7 +94,7 @@
       cursor: pointer;
       position: absolute;
       right: 6rem;
-      top: 3.8rem;
+      top: 2.5rem;
       transform: translate(-50%, -50%);
   }
 
@@ -190,7 +200,7 @@
       width: 1280px;
       max-width: 95%;
       margin: 0 auto;
-      padding: 6.5em 20px 0 20px;
+      padding: 10em 20px 0 20px;
   }
 
   .aboutsec h2 {
@@ -199,6 +209,8 @@
       font-size: 40px;
       font-weight: bolder;
       cursor: pointer;
+      padding-top: 3em;
+
   }
 
   .aboutsec h2:hover {
@@ -476,10 +488,22 @@
 
   /* responsiveness code */
 
+  @media (max-width:2940px) {
+    .theme i {
+        position: absolute;
+        right:2%;
+    }
+
+    .wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
   @media (max-width:1350px) {
       .theme i {
           position: absolute;
-          right: 5%;
+          right:0;
       }
 
       .mydata p {
@@ -609,7 +633,7 @@
 
       .theme i {
           position: absolute;
-          top: 7.5%;
+          top:50%;
       }
 
       .mydata {
@@ -694,6 +718,11 @@
           padding-bottom: 4px;
       }
 
+      .theme i{
+        position: absolute;
+        top: 80%;
+      }
+
   }
 
   @media (max-width:300px) {
@@ -771,4 +800,4 @@
           font-size: 16px;
       }
 
-  }
+    }
