@@ -178,14 +178,14 @@
   }
 
   .nav-icon {
-      color: rgb(39, 147, 255);
+      color: white;
       width: 2.4rem;
       height: 2.4rem;
       color: black;
   }
 
   .nav-icon[name="close-outline"] {
-      color: rgb(39, 147, 255);
+      color: white;
       display: none;
   }
 
@@ -553,11 +553,10 @@
       .nav-links {
           width: 50%;
           height: 50vh;
-          background: linear-gradient(45deg, white, rgb(156, 240, 255), white);
-          border: 1px solid rgb(39, 147, 255);
+          background: linear-gradient(45deg, rgb(16, 237, 222)0%,rgb(39, 147, 255)100%);
           border-top: 0px;
           border-bottom-left-radius: 1em;
-          box-shadow: 0 0 8px rgb(39, 147, 255);
+          box-shadow: 0 0 8px rgb(63, 255, 236);
           position: absolute;
           top: 0;
           right: 0;
@@ -594,6 +593,9 @@
       .active .navbtn .nav-icon[name="menu-outline"] {
           display: none;
       }
+      .nav-icon {
+        color:white;
+    }
 
       .wrapper{
         height: 4.5em;
@@ -625,7 +627,7 @@
       }
 
       .nav-icon {
-          color: rgb(39, 147, 255);
+          color:white;
       }
 
       .container .pic {
@@ -730,7 +732,7 @@
       }
 
       .nav-icon {
-          color: rgb(39, 147, 255);
+          color: white;
       }
 
       .navbtn .nav-icon {
@@ -799,7 +801,7 @@
       }
 
       .nav-icon {
-          color: rgb(39, 147, 255);
+          color: white;
       }
 
       .nav-links li {
