@@ -34,7 +34,7 @@
       margin-left:0px;
       margin-right: 0px;
       padding: 0 20px;
-      background: linear-gradient(45deg, rgb(39, 147, 255)0%, rgb(16, 237, 222)100%);
+      background: linear-gradient(45deg,rgb(16, 237, 222)0%, rgb(39, 147, 255)100%);
       z-index: 1;
   }
 
@@ -75,18 +75,18 @@
 
   .nav-links li a {
       margin-right: 5em;
-      color: rgb(39, 147, 255);
+      color: white;
   }
 
   .nav-links li a:hover {
-      color: rgb(39, 147, 255);
+      color: white;
       transition: 0.2s;
       font-weight: 600;
-      text-shadow: 0 0 10px rgb(39, 147, 255),
-          0 0 10px rgb(39, 147, 255),
-          0 0 40px rgb(39, 147, 255),
-          0 0 80px rgb(39, 147, 255),
-          0 0 100px rgb(39, 147, 255);
+      text-shadow: 0 0 10px white,
+          0 0 10px white,
+          0 0 60px white,
+          0 0 90px white,
+          0 0 100px white;
   }
 
   .theme i {
@@ -152,9 +152,9 @@
   }
 
   .icon .btn:hover {
-      background-color: rgb(39, 147, 255);
+      background: linear-gradient(45deg,rgb(16, 237, 222)0%, rgb(39, 147, 255)100%);
       color: white;
-      box-shadow: 0 0 10px rgb(39, 147, 255);
+      box-shadow: 0 0 8px rgb(39, 147, 255);
   }
 
   .intro .social {
@@ -172,7 +172,7 @@
   }
 
   .intro .social a i:hover {
-      background-color: rgb(39, 147, 255);
+    background: linear-gradient(45deg,rgb(16, 237, 222)0%, rgb(39, 147, 255)100%);
       color: white;
       box-shadow: 0 0 10px rgb(39, 147, 255);
   }
@@ -217,7 +217,8 @@
   .aboutsec h2:hover {
       transition: 0.2s;
       font-weight: 600;
-      text-shadow: 0 1cqh 12px rgb(39, 147, 255);
+      text-shadow: 0 0 5px rgb(85, 170, 255),
+      0 0 20px rgb(85, 170, 255);
   }
 
   .aboutme {
@@ -473,6 +474,17 @@
     color: inherit;
     color: white;
     opacity: 0.8;
+}
+
+.footer ul li a:hover,.cw:hover{
+    color: white;
+      transition: 0.2s;
+      font-weight: 600;
+      text-shadow: 0 0 10px white,
+          0 0 10px white,
+          0 0 60px white,
+          0 0 90px white,
+          0 0 100px white;
 }
 
 .footer ul li{
